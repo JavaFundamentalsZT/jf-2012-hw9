@@ -79,7 +79,7 @@ object ListApp {
   def testMap1() = ???
 
   def testFlatMap() {
-    val strings = List("abc", "def")
+    val strings = List("abc", "", "def")
     val chars = strings flatMap { str => List(str.toCharArray():_*) }
     assert (chars == List('a', 'b', 'c', 'd', 'e', 'f'))
   }
