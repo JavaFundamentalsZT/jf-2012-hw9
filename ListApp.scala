@@ -33,7 +33,6 @@ case object Empty extends List[Nothing] {
 /** The non-empty list, also known as Cons or :: */
 case class NonEmpty[A](head: A, tail: List[A]) extends List[A] {
   /* Assignment: implement map. filter, flatMap */
-  /* Maximum points without implementing flatMap 0.9 */
   
   /**
    * Return a new list where function f has been applied to all elements.
